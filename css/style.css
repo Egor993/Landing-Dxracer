@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Jura';
+  src: local('Jura'), local('Jura'), 
+  url("../fonts/Jura-Regular.ttf") format("truetype");
+  font-display: swap;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {color:#fff}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-family: 'Jura', Helvetica, Arial, sans-serif;font-size: 20px; padding: 0; margin: 0;}
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+h1{  color:#fff ;}
+.ob {max-width:1920px;}
+#logo{background: url(f_img/logo12.png);}
+.ob{background:#1a1a1a}
+.navbar{background: linear-gradient(to right, #1e1e1e, #050505);box-shadow: 0 0 20px #A9A9A9}  
+.nav-link{color:#fff;margin-right: 1rem}
+.nav-link:hover{color: #ffcc00;text-decoration: underline}
+.navbar-collapse{justify-content:space-evenly}
+.slider {
+	height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.slider-content {
+	height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slide {
+	height: 100%;
+  width: 100%;
+  display:table;
+}
+.slide > div {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color:#fff;
+	text-shadow:0 1px 4px #000;
+}
+.slide > div h2 {
+	font-size: 6em;
+	line-height: 2em;
+	font-weight: bold;
+}
+.sl1 {
+	background: url(../img/fon/1f.jpg) no-repeat center top / cover;
+}
+@media (max-width: 992px) {
+.sl1 {
+	background: url(../img/fon/p1.jpg) no-repeat center top / cover;
+}
+}
+@media (max-width: 415px) {
+.slide > div h2 {
+	font-size: 3em;
+	line-height: 2em;
+	font-weight: bold;
+}
+.sl1 {
+	background: url(../img/fon/t1.jpg) no-repeat center top / cover;
+}
+}
+.sl2 {
+	background: url(../img/fon/2f.jpg) no-repeat center top / cover;
+}
+@media (max-width: 992px) {
+.sl2 {
+	background: url(../img/fon/p2.jpg) no-repeat center top / cover;
+}
+}
+@media (max-width: 415px) {
+.sl2 {
+	background: url(../img/fon/t2.jpg) no-repeat center top / cover;
+}
+}
+.sl3 {
+	background: url(../img/fon/3f.jpg) no-repeat center top / cover;
+}
+@media (max-width: 992px) {
+.sl3 {
+	background: url(../img/fon/p3.jpg) no-repeat center top / cover;
+}
+}
+@media (max-width: 415px) {
+.sl3 {
+	background: url(../img/fon/t3.jpg) no-repeat center top / cover;
+}
+}
+.slider-controls {
+	position:absolute;
+	left:0px;
+	bottom:30px;
+	text-align:center;
+	width: 100%;
+}
+.slider-controls .control-slide {
+	margin:2px;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	text-indent:-9999px;
+	background:#fff;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+}
+.slider-controls .control-slide:hover {
+	background: #FFED87;
+	cursor: pointer;
+}
+.slider-controls .control-slide.active {
+	background: #FFD800;
+}
+.marketing{color:#1c0033}
+.featurette-divider{border:1px solid #fff}
+#onas{background-color:#212121;border-radius:6px;border:1px solid #ffcc00;box-shadow:0 0 10px #A9A9A9;color:#fff}
+.skidki {color:#fff}
+.example-image {
+border:1px solid #dcdcdc;
+border-radius:4px;
+box-shadow: 0 0 10px #A9A9A9
+}
+.card{background:#212121;font-size:18px;color:#fff;min-height:540px;box-shadow: 0 0 10px #A9A9A9}
+.rounded-circle{padding-top:10px;margin:0 auto}
+.bt{font-size:14px;color:#fff}
+#mail{background-color:#212121;border-radius:6px;border:1px solid #ffcc00;box-shadow:0 0 10px #A9A9A9}
+#led{color:#fff}
+#karta{padding:0px;width:100%;height:520px;background: url(../f_img/karta.png)no-repeat center center;}
+@media (max-width:835px) {
+#karta{padding:0px;width:100%;height:420px;background: url(../f_img/karta834.jpg)no-repeat center center;}
+}
+@media (max-width:377px) {
+#karta{padding:0px;width:100%;height:220px;background: url(../f_img/karta376.jpg)no-repeat center center;}
+}
+#fmail {margin-top:-35px;}
+.footer {background: linear-gradient(to right, #1e1e1e, #050505);}
+.hidden{opacity: 0;}
+.visible{opacity: 1;}
+.social a {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: #ffcc00;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 0 6px 6px 0;
+    padding: 2px
+}
+.instagram a:hover {background:#dcdcdc}
+.vk a:hover {background:#dcdcdc}

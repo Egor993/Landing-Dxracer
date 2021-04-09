@@ -1,0 +1,29 @@
+#AuthType Basic
+#AuthName "Authorization"
+#AuthUserFile /.htpasswd
+#Require valid-user
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/javascript "access plus 5 days"
+ExpiresByType text/javascript "access plus 5 days"
+ExpiresByType text/css "access plus 105 days"
+ExpiresByType image/gif "access plus 105 days"
+ExpiresByType image/jpeg "access plus 105 days"
+ExpiresByType image/png "access plus 105 days"
+ExpiresByType image/webp "access plus 105 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|txt)$">
+    Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+  <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png|webp|woff|woff2|svg|ttf|otf|eot)$">
+    Header set Cache-Control "max-age=31536000"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+

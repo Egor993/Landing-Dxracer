@@ -1,0 +1,9 @@
+@font-face {
+  font-display: swap;
+  font-family: "Cormorant Infant";
+  src: local('Cormorant Infant'), local('Cormorant Infant'), 
+  /*url("fonts/regular.eot?#iefix") format("embedded-opentype"),*/ 
+  url("fonts/CormorantInfant-Regular.woff2") format("woff2"), 
+  url("fonts/CormorantInfant-Regular.woff") format("woff"),
+  url("fonts/CormorantInfant-Regular.ttf") format("truetype");
+  }
